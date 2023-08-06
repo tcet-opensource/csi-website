@@ -1,0 +1,83 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+}
+.mainheading{
+    text-align: center;
+}
+
+.blackpink1 {
+    padding: 0.5rem;
+    width: fit-content;
+    margin: 3rem auto;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    animation: lightson 0.5s ease 3 forwards;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  @keyframes lightson {
+    0% {
+      opacity: 0;
+      box-shadow: 0px 0px 0px 0px cyan, 0px 0px 0px 0px cyan, 0px 0px 0px 0px cyan, inset 0px 0px 0px cyan;
+    }
+  
+    20% {
+      opacity: 0.5;
+      box-shadow: 0px 0px 5px 0px cyan, 0px 0px 5px 0px cyan, 0px 0px 10px 0px cyan, inset 0px 0px 5px cyan;
+    }
+  
+    40% {
+      opacity: 0;
+      box-shadow: 0px 0px 2px 0px cyan, 0px 0px 5px 0px cyan, 0px 0px 25px 0px cyan, inset 0px 0px 10px cyan;
+    }
+  
+    50% {
+      opacity: 1;
+      box-shadow: 0px 0px 10px 0px cyan, 0px 0px 20px 0px cyan, 0px 0px 100px 0px cyan, inset 0px 0px 30px cyan;
+    }
+  
+    100% {
+      opacity: 1;
+      box-shadow: 0px 0px 5px 0px cyan, 0px 0px 10px 0px cyan, 0px 0px 20px 0px cyan, inset 0px 0px 10px cyan;
+    }}
+
+    .forcard{
+        padding: 1rem;
+        background: none !important;
+        width: 15rem;
+        text-align: center;
+        /* border: 2px solid red !important; */
+    }
+
+    .forcol
+    {
+        padding: 1rem;
+    }
+    .container1{
+        /* border: 2px solid red; */
+        margin-top: 4rem;
+        padding: 6rem;
+        width: fit-content;
+    }
+
+    .forlogoadd{
+      width: 80%;
+    }
+    .card{
+      text-align: center !important;
+      border: 5px solid rgb(85, 85, 85) !important;
+      border-radius:1rem !important;
+      height: 18rem !important;
+    }
+    .cardheading{
+      font-family: cursive;
+      width:100%;
+      font-size: 2rem;
+    }
+
+
+    .text1{
+      font-weight: bold;
+    }
