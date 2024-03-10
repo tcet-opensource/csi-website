@@ -1,0 +1,34 @@
+/* .header {
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function:linear;
+  }
+  
+  @keyframes mymove {
+    from {left: -50px;}
+    to {left: 100px;}
+  } */
+
+  .cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        /* transform: translateY(calc(100% - 20px)); */
+        transform: translateY(100%);
+
+    }
+    to { opacity: 1 }
+}
+
+p{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

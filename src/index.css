@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .game {
+    font-size: 52px;
+  }
+  /* .body{
+    background-image:url("../public/csi-website.png");
+    z-index: 0;
+  } */
+}
+
