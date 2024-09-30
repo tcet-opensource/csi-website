@@ -1,0 +1,155 @@
+body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #020005;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
+nav .logo {
+  margin: 5px;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 20px;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: medium;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+nav ul li .a:not(.active):hover {
+  background-color: #260536;
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 36px;
+  height: 24px;
+}
+
+nav .menu span {
+  height: 6px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.navbar .a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.navbar .a:hover, .dropdown:hover .dropbtn {
+  background-color: #260536;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0c020f;
+  min-width: 120px;
+  z-index: 10;
+}
+
+/* Links inside the dropdown */
+.dropdown-content .a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content .a:hover {
+  background-color: #260536;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@media (max-width: 820px) {
+  nav .menu {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4px;
+   
+  }
+
+  nav ul.open {
+    display: flex;
+     justify-content: right;
+    justify-items: right
+  }
+
+  nav ul li {
+    width: 25%;
+    text-align: left;
+  }
+
+  nav ul li a {
+    margin: 4px 8px;
+  }
+}

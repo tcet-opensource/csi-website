@@ -1,0 +1,33 @@
+div{
+  background-image: "/csi-website.png";
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.coreDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ .postn {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.span {
+  display: none;
+}
+    
+.container:hover + .hide {
+  display: block;
+  /* color: red; */
+}
+
+.lazy-image {
+  width: 100%;
+  height: auto;
+  /* max-width: 500px;  */
+  /* margin: 20px auto; */
+}
