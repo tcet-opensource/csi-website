@@ -22,7 +22,7 @@ export default function Mission(){
     const missions = csi.map(mission => {
         return(
             <div className="relative group">
-            <div className="parent flex flex-col border-2 border-gray-400 p-4 text-white relative z-10 shadow-md shadow-gray-500">
+            <div className="parent flex flex-col border-2 border-gray-400 p-4 text-white relative z-10 shadow-md shadow-gray-500 h-full">
                 <img src={`/images/mission/${mission.image}`} alt="" className="w-32 h-32 md:w-40 md:h-40 self-center" />
                 <span className="text-center font-bold text-lg md:text-lg lg:text-2xl uppercase">{mission.title}</span>
                 <span className="text-center mt-2 md:mt-3 text-xs sm:text-sm lg:text-base xl:text-xl ">{mission.content}</span>
